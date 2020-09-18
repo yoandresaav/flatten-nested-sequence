@@ -22,7 +22,7 @@ class ItemView(APIView):
         # Save Result flatten list
         Item.objects.create(result=flatten_list)
 
-        return Response({'items': flatten_list})
+        return Response({'result': flatten_list})
 
 class ListItem(ListAPIView):
     """List all results"""
