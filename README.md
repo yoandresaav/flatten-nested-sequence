@@ -1,3 +1,9 @@
+## Instructions
+ - Clone repo
+ - $docker-compose up
+ - load postman file
+ - test :)
+
 ## Create super user command
  - docker-compose run app sh -c "python manage.py createsuperuser"
 
