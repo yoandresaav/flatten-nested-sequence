@@ -9,7 +9,8 @@ services:
     volumes: 
       - ./app:/app
     command: >
-      sh -c "python manage.py makemigrations &&
+      sh -c "python manage.py wait_db &&
+             python manage.py makemigrations &&
              python manage.py migrate &&
              python -m pytest &&
              python manage.py runserver 0.0.0.0:8000"

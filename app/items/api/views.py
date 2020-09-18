@@ -12,7 +12,7 @@ class ItemView(APIView):
     """
     Recive nested list and return flatten list.
     """
-    def get(self, request, format=None):
+    def post(self, request, format=None):
         serializer = ItemSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
