@@ -1,4 +1,4 @@
-## Instructions
+## How to get started
  - Clone repo
  - $docker-compose up
  - load postman file
